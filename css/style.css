@@ -1,0 +1,64 @@
+body {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-container {
+	margin: auto;
+	max-width: 100%;
+	border: 1px solid #f4f4ed;
+	box-shadow: 5px 5px 5px gray;
+}
+
+.header {
+	text-align: center;
+	font-family: Impact, sans-serif;
+	letter-spacing: 20px;
+	color: #3e3631;
+}
+
+#greeting {
+	text-align: center;
+	font-size: 1em;
+	font-family: Arial black, sans-serif;
+	color: #3e3631;
+}
+
+h2,
+p {
+	text-align: center;
+	font-family: Arial black, sans-serif;
+	color: #3e3631;
+}
+
+.cat-container {
+	max-width: 100%;
+	height: auto;
+}
+
+#name {
+	text-align: center;
+	font-family: Arial black, sans-serif;
+	color: #3e3631;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 2px 2px 2px gray;
+}
+
+#counter-container {
+	height: 75px;
+	max-width: 100%;
+}
+
+#counter {
+	text-align: center;
+	font-family: Impact, sans-serif;
+	color: #3e3631;
+}
