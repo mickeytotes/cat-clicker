@@ -7,13 +7,15 @@ var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
 		count: 0,
-		id: 1
+		imgid: 1,
+		countid: 3
 	},
 	{
 		name: "Cecile",
 		img: "images/screaming.jpeg",
 		count: 0,
-		id: 2
+		imgid: 2,
+		countid: 4
 	}]
 
 function loadCats(array) {
@@ -33,7 +35,8 @@ function loadCats(array) {
 		var catCount = document.createElement('p');
 		catCount.innerHTML = array[i].count;
 		catEntry.appendChild(catCount);
-		catImg.id = array[i].id;
+		catImg.id = array[i].imgid;
+		catCount.id = array[i].countid;
 
 		catImg.addEventListener("click", function() {
 			catCount.innerHTML = Number(catCount.innerHTML) + 1;
