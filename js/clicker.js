@@ -38,12 +38,12 @@ function loadCats(array) {
 		catImg.id = array[i].imgid;
 		catCount.id = array[i].countid;
 
-		catImg.addEventListener("click", function() {
+		/*catImg.addEventListener("click", function() {
 			catCount.innerHTML = Number(catCount.innerHTML) + 1;
 			console.log(catCount.innerHTML);
 			console.log(event.target);
 			console.log(this);
-		}, false);
+		}, false);*/
 
 /*	catImg.addEventListener("click",function(){
 		var index = i;
@@ -64,6 +64,21 @@ function loadCats(array) {
 
 		document.body.appendChild(catEntry);
 	}
+
+	var catImg1 = document.getElementById('1');
+	var catImg2 = document.getElementById('2');
+	var catCount1 = document.getElementById('3');
+	var catCount2 = document.getElementById('4');
+
+	catImg1.addEventListener("click", function() {
+			catCount1.innerHTML = Number(catCount1.innerHTML) + 1;
+			console.log(catCount1.innerHTML);
+		}, false);
+
+	catImg2.addEventListener("click", function() {
+			catCount2.innerHTML = Number(catCount2.innerHTML) + 1;
+			console.log(catCount2.innerHTML);
+		}, false);
 }
 /*var catImage1 = cats.cat[0];
 
