@@ -38,6 +38,8 @@ function loadCats(array) {
 		catImg.addEventListener("click", function() {
 			catCount.innerHTML = Number(catCount.innerHTML) + 1;
 			console.log(catCount.innerHTML);
+			console.log(event.target);
+			console.log(this);
 		}, false);
 
 /*	catImg.addEventListener("click",function(){
