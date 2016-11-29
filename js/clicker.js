@@ -59,7 +59,7 @@ function loadCats(array) {
 		catImg.id = array[i].imgid;
 		catCount.id = array[i].countid;
 
-		catCount.innerHTML = countValue;
+		var countValue = array[i].count.innerHTML;
 
 		catImg.addEventListener("click", (function(countValueCopy) {
 			return function(){
