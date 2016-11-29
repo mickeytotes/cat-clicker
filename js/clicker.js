@@ -55,18 +55,17 @@ function loadCats(array) {
 
 		var catCount = document.createElement('p');
 		catCount.innerHTML = array[i].count;
+		var num = catCount.innerHTML;
 		catEntry.appendChild(catCount);
 		catImg.id = array[i].imgid;
 		catCount.id = array[i].countid;
 
-		var countValue = array[i].count.textContent;
-
-		catImg.addEventListener("click", (function(countValueCopy) {
+		catImg.addEventListener("click", (function(numCopy) {
 			return function(){
-				countValueCopy = Number(countValueCopy) + 1;
-				console.log(countValueCopy);
+				numCopy = Number(numCopy) + 1;
+				console.log(numCopy);
 			};
-		})(countValue));
+		})(num));
 
 		document.body.appendChild(catEntry);
 	}
