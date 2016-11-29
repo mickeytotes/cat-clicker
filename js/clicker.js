@@ -59,12 +59,12 @@ function loadCats(array) {
 		catImg.id = array[i].imgid;
 		catCount.id = array[i].countid;
 
-		var countValue = catCount.innerHTML;
+		catCount.textContent = countValue;
 
-		catImg.addEventListener("click", (function(catCountCopy) {
+		catImg.addEventListener("click", (function(countValueCopy) {
 			return function(){
-				catCountCopy = Number(catCountCopy) + 1;
-				console.log(catCountCopy);
+				countValueCopy = Number(countValueCopy) + 1;
+				console.log(countValueCopy);
 			};
 		})(countValue));
 
