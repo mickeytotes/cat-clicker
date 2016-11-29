@@ -25,14 +25,14 @@ var cats = [{
 		countid: 6
 	},
 	{
-		name: "Olivia"
+		name: "Olivia",
 		img: "images/waiting-cat.jpg",
 		count: 0,
 		imgid: 7,
 		countid: 8
 	},
 	{
-		name: "Stormio"
+		name: "Stormio",
 		img: "images/duh-cat.jpg",
 		count: 0,
 		imgid: 9,
