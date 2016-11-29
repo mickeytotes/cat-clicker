@@ -59,10 +59,19 @@ function loadCats(array) {
 		catImg.id = array[i].imgid;
 		catCount.id = array[i].countid;
 
+		var countValue = catCount.innerHTML;
+
+		catImg.addEventListener("click", (function(catCountCopy) {
+			return function(){
+				catCountCopy = Number(catCountCopy) + 1;
+				console.log(catCountCopy);
+			};
+		})(countValue));
+
 		document.body.appendChild(catEntry);
 	}
 
-	var catImg1 = document.getElementById('1');
+	/*var catImg1 = document.getElementById('1');
 	var catImg2 = document.getElementById('2');
 	var catCount1 = document.getElementById('3');
 	var catCount2 = document.getElementById('4');
@@ -75,7 +84,7 @@ function loadCats(array) {
 	catImg2.addEventListener("click", function() {
 			catCount2.innerHTML = Number(catCount2.innerHTML) + 1;
 			console.log(catCount2.innerHTML);
-		}, false);
+		}, false);*/
 }
 
 loadCats(cats);
