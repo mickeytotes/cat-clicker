@@ -62,7 +62,7 @@ function loadCats(array) {
 
 		catImg.addEventListener("click", (function(numCopy) {
 			return function(){
-				numCopy = Number(numCopy) + 1;
+				num = Number(numCopy) + 1;
 				console.log(numCopy);
 			};
 		})(num));
