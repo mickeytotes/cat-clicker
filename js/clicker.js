@@ -67,7 +67,7 @@ function loadCats(array) {
 			};
 		})(num));
 
-		document.body.appendChild(catEntry);
+		//document.body.appendChild(catEntry);
 	}
 
 	/*var catImg1 = document.getElementById('1');
@@ -95,6 +95,8 @@ function loadNames(array) {
 
 		name.addEventListener("click", (function(nameCopy) {
 			return function() {
+
+
 				var nameValue = nameCopy.innerHTML;
 				document.getElementById('sample-box').innerHTML = '';
 				document.getElementById('sample-box').append(nameValue);
