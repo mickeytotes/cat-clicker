@@ -43,15 +43,19 @@ function loadCats(array) {
 	for (var i = 0; i < array.length; i++) {
 		var name = document.createElement('li');
 		name.innerHTML = array[i].name;
+		var img = array[i].img;
+		var count = array[i].count;
 
-		name.addEventListener("click", (function(nameCopy) {
+		name.addEventListener("click", (function(nameCopy, imgCopy, countCopy) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
 				document.getElementById('sample-box').innerHTML = '';
 				document.getElementById('sample-box').append(nameValue);
 				console.log(nameCopy);
+				console.log(imgCopy);
+				console.log(countCopy);
 			};
-		})(name));
+		})(name, img, count));
 
 		document.getElementById('name-container').appendChild(name);
 
@@ -109,4 +113,33 @@ loadCats(cats);
 	}
 }*/
 
-loadNames(cats);
+//---------------------------------------
+//scratch
+/*function loadNames(array) {
+	for (var i = 0; i < array.length; i++) {
+		var name = document.createElement('li');
+		name.innerHTML = array[i].name;
+		var img = array[]
+
+		name.addEventListener("click", (function(nameCopy) {
+			return function() {
+				var nameValue = nameCopy.innerHTML;
+				document.getElementById('sample-box').innerHTML = '';
+				document.getElementById('sample-box').append(nameValue);
+				console.log(nameCopy);
+			};
+		})(name));
+
+		document.getElementById('name-container').appendChild(name);
+	}
+}*/
+
+/*
+
+function getSelectedCat(array) {
+
+}
+
+
+*/
+
