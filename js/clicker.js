@@ -56,11 +56,12 @@ function loadCats(array) {
 				var nameValue = nameCopy.innerHTML;
 				document.getElementById('sample-p').innerHTML = '';
 				document.getElementById('sample-count').innerHTML = '';
+				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
-				document.getElementById('sample-box').append(catImgCopy);
+				document.getElementById('now-cat').append(catImgCopy);
 				document.getElementById('sample-count').append(countCopy);
 				console.log(nameCopy);
-				console.log(imgCopy);
+				console.log(catImgCopy);
 				console.log(countCopy);
 			};
 		})(name, catImg, count));
