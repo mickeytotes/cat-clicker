@@ -43,21 +43,26 @@ function loadCats(array) {
 	for (var i = 0; i < array.length; i++) {
 		var name = document.createElement('li');
 		name.innerHTML = array[i].name;
-		var img = array[i].img;
 		var count = array[i].count;
 
-		name.addEventListener("click", (function(nameCopy, imgCopy, countCopy) {
+		var catImg = document.createElement('img');
+		catImg.src = array[i].img;
+		catImg.style.width = '200px';
+		catImg.className = ("cat");
+
+
+		name.addEventListener("click", (function(nameCopy, catImgCopy, countCopy) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
 				document.getElementById('sample-p').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
-				document.getElementById('sample-img').append(imgCopy);
+				document.getElementById('sample-box').appendChild(catImgCopy);
 				document.getElementById('sample-count').append(countCopy);
 				console.log(nameCopy);
 				console.log(imgCopy);
 				console.log(countCopy);
 			};
-		})(name, img, count));
+		})(name, catImg, count));
 
 		document.getElementById('name-container').appendChild(name);
 
