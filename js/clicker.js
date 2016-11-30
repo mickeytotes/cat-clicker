@@ -95,7 +95,8 @@ function loadNames(array) {
 
 		name.addEventListener("click", (function(nameCopy) {
 			return function() {
-				document.getElementById('sample-box').append(nameCopy);
+				var nameValue = nameCopy.innerHTML;
+				document.getElementById('sample-box').append(nameValue);
 				console.log(nameCopy);
 			};
 		})(name));
