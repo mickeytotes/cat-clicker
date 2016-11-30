@@ -51,15 +51,15 @@ p {
 
 
 
-.cat-container {
+/*.cat-container {
 	max-width: 100%;
-	height: auto;
+	height: auto;*/
 }
 
-#name {
+/*#name {
 	text-align: center;
 	font-family: Arial black, sans-serif;
-	color: #3e3631;
+	color: #3e3631;*/
 }
 
 img {
@@ -71,7 +71,7 @@ img {
 	box-shadow: 1px 2px 2px 2px gray;
 }
 
-#counter-container {
+/*#counter-container {
 	height: 75px;
 	max-width: 100%;
 }
@@ -80,4 +80,4 @@ img {
 	text-align: center;
 	font-family: Impact, sans-serif;
 	color: #3e3631;
-}
+}*/
