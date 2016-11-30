@@ -62,7 +62,7 @@ function loadCats(array) {
 
 		catImg.addEventListener("click", (function(numCopy) {
 			return function(){
-				num = Number(numCopy) + 1;
+				numCopy = Number(numCopy) + 1;
 				console.log(numCopy);
 			};
 		})(num));
@@ -88,3 +88,12 @@ function loadCats(array) {
 
 loadCats(cats);
 
+function loadNames(array) {
+	for (var i = 0; i < array.length; i++) {
+		var name = document.createElement('li');
+		name.innerHTML = array[i].name;
+		document.getElementById('name-container').appendChild(name);
+	}
+}
+
+loadNames(cats);
