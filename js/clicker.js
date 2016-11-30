@@ -92,6 +92,13 @@ function loadNames(array) {
 	for (var i = 0; i < array.length; i++) {
 		var name = document.createElement('li');
 		name.innerHTML = array[i].name;
+
+		name.addEventListener("click", (function(nameCopy) {
+			return function() {
+				console.log(nameCopy);
+			};
+		})(name));
+
 		document.getElementById('name-container').appendChild(name);
 	}
 }
