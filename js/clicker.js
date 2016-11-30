@@ -70,20 +70,6 @@ function loadCats(array) {
 		//document.body.appendChild(catEntry);
 	}
 
-	/*var catImg1 = document.getElementById('1');
-	var catImg2 = document.getElementById('2');
-	var catCount1 = document.getElementById('3');
-	var catCount2 = document.getElementById('4');
-
-	catImg1.addEventListener("click", function() {
-			catCount1.innerHTML = Number(catCount1.innerHTML) + 1;
-			console.log(catCount1.innerHTML);
-		}, false);
-
-	catImg2.addEventListener("click", function() {
-			catCount2.innerHTML = Number(catCount2.innerHTML) + 1;
-			console.log(catCount2.innerHTML);
-		}, false);*/
 }
 
 loadCats(cats);
@@ -95,12 +81,11 @@ function loadNames(array) {
 
 		name.addEventListener("click", (function(nameCopy) {
 			return function() {
-
-
 				var nameValue = nameCopy.innerHTML;
 				document.getElementById('sample-box').innerHTML = '';
 				document.getElementById('sample-box').append(nameValue);
 				console.log(nameCopy);
+				console.log(array.[i].countid);
 			};
 		})(name));
 
