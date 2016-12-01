@@ -64,12 +64,21 @@ function loadCats(array) {
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
+
+
+
 			};
 		})(name, catImg, count));
 
 		document.getElementById('name-container').appendChild(name);
 
-
+		catImg.addEventListener("click", (function(countCopy) {
+			return function() {
+				var num = countCopy.innerHTML;
+				num = Number(num) + 1;
+				console.log(num);
+			};
+		})(count));
 
 
 		/*var catEntry = document.createElement('div');
