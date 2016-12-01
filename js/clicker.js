@@ -6,7 +6,7 @@
 var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
-		count: 0,
+		count: '',
 		imgid: 1,
 		countid: 3
 	},
