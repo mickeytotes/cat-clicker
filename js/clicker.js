@@ -97,7 +97,7 @@ function loadCats(array) {
 			};
 		})(num));
 
-		document.body.appendChild(catEntry);
+		//document.body.appendChild(catEntry);
 	}
 
 }
