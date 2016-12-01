@@ -54,9 +54,9 @@ function loadCats(array) {
 		name.addEventListener("click", (function(nameCopy, catImgCopy, countCopy) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
-				document.getElementById('sample-box').innerHTML = '';
-				//document.getElementById('sample-p').innerHTML = '';
-				//document.getElementById('sample-count').innerHTML = '';
+
+				document.getElementById('sample-p').innerHTML = '';
+				document.getElementById('sample-count').innerHTML = '';
 				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
 				document.getElementById('now-cat').append(catImgCopy);
