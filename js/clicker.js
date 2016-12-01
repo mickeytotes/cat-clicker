@@ -2,11 +2,19 @@
 // the cat gets clicked. We're doing important work over here.
 // Just trying to make our country proud
 
+var head = document.getElementsByClassName('header');
+
+head.addEventListener('click', function() {
+	var homeImg = document.getElementById('default-img');
+
+	document.getElementById('now-cat').innerHTML = '';
+	document.getElementById('now-cat').append(homeImg);
+});
 
 var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
-		count: '',
+		count: 0,
 		imgid: 1,
 		countid: 3
 	},
@@ -51,6 +59,7 @@ function loadCats(array) {
 		catImg.className = ("cat");
 
 
+		// loads the cat corresponding to the name clicked
 		name.addEventListener("click", (function(nameCopy, catImgCopy, countCopy) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
@@ -72,6 +81,7 @@ function loadCats(array) {
 
 		document.getElementById('name-container').appendChild(name);
 
+		// increases the count when the cat picture is clicked
 		catImg.addEventListener("click", (function(countCopy) {
 			return function() {
 				document.getElementById('sample-count').innerHTML = '';
