@@ -9,7 +9,7 @@ head.addEventListener('click', function() {
 
 	document.getElementById('now-cat').innerHTML = '';
 	document.getElementById('now-cat').append(homeImg);
-});
+})
 
 var cats = [{
 		name: "Toby",
