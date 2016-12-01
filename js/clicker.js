@@ -125,6 +125,7 @@ function loadCats(array) {
 
 	head.addEventListener('click', function() {
 		var homeImg = document.getElementById('default-img');
+		homeImg.src = "images/kitty-litter.jpg";
 
 		document.getElementById('now-cat').innerHTML = '';
 		document.getElementById('now-cat').append(homeImg);
