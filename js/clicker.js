@@ -74,6 +74,7 @@ function loadCats(array) {
 
 		catImg.addEventListener("click", (function(countCopy) {
 			return function() {
+				document.getElementById('sample-count').innerHTML = '';
 				countCopy = Number(countCopy) + 1;
 				document.getElementById('sample-count').append(countCopy);
 				console.log(countCopy);
