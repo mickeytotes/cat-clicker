@@ -72,7 +72,7 @@ function loadCats(array) {
 
 
 
-		var catEntry = document.createElement('div');
+		/*var catEntry = document.createElement('div');
 
 		var catName = document.createElement('h2');
 		catName.innerHTML = array[i].name;
@@ -96,7 +96,7 @@ function loadCats(array) {
 				numCopy = Number(numCopy) + 1;
 				console.log(numCopy);
 			};
-		})(num));
+		})(num));*/
 
 		//document.body.appendChild(catEntry);
 	}
