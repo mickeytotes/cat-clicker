@@ -4,12 +4,12 @@
 
 
 
-document.getElementsByClassName('header-container').addEventListener('click', function() {
+/*document.getElementsByClassName('header-container').addEventListener('click', function() {
 	var homeImg = document.getElementById('default-img');
 
 	document.getElementById('now-cat').innerHTML = '';
 	document.getElementById('now-cat').append(homeImg);
-}, false);
+}, false);*/
 
 var cats = [{
 		name: "Toby",
@@ -120,6 +120,13 @@ function loadCats(array) {
 
 		//document.body.appendChild(catEntry);
 	}
+
+	document.getElementsByClassName('header-container').addEventListener('click', function() {
+	var homeImg = document.getElementById('default-img');
+
+	document.getElementById('now-cat').innerHTML = '';
+	document.getElementById('now-cat').append(homeImg);
+}, false);
 
 }
 
