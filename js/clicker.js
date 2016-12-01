@@ -9,7 +9,7 @@ document.getElementsByClassName('header-container').addEventListener('click', fu
 
 	document.getElementById('now-cat').innerHTML = '';
 	document.getElementById('now-cat').append(homeImg);
-})
+}, false);
 
 var cats = [{
 		name: "Toby",
