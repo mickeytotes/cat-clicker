@@ -128,6 +128,7 @@ function loadCats(array) {
 		homeImg.src = "images/kitty-litter.jpg";
 
 		document.getElementById('now-cat').innerHTML = '';
+		document.getElementById('sample-count').innerHTML = '';
 		document.getElementById('now-cat').appendChild(homeImg);
 	}, false);
 
