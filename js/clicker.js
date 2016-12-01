@@ -2,9 +2,9 @@
 // the cat gets clicked. We're doing important work over here.
 // Just trying to make our country proud
 
-var head = document.getElementsByClassName('header');
 
-head.addEventListener('click', function() {
+
+document.getElementsByClassName('header-container').addEventListener('click', function() {
 	var homeImg = document.getElementById('default-img');
 
 	document.getElementById('now-cat').innerHTML = '';
