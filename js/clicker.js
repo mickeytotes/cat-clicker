@@ -58,7 +58,7 @@ function loadCats(array) {
 				document.getElementById('sample-count').innerHTML = '';
 				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
-				document.getElementById('now-cat').append(catImgCopy);
+				document.getElementById('cat-container').append(catImgCopy);
 				document.getElementById('sample-count').append(countCopy);
 				console.log(nameCopy);
 				console.log(catImgCopy);
