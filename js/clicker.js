@@ -85,9 +85,10 @@ function loadCats(array) {
 		// increases the count when the cat picture is clicked
 		catImg.addEventListener("click", (function(countCopy) {
 			return function() {
-				document.getElementById('sample-count').innerHTML = '';
+				var num = document.getElementById('sample-count');
+				num.innerHTML = '';
 				countCopy = Number(countCopy) + 1;
-				document.getElementById('sample-count').append(countCopy);
+				num.append(countCopy);
 				console.log(countCopy);
 			};
 		})(count));
