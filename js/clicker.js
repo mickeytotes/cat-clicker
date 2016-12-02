@@ -3,18 +3,10 @@
 // Just trying to make our country proud
 
 
-
-/*document.getElementsByClassName('header-container').addEventListener('click', function() {
-	var homeImg = document.getElementById('default-img');
-
-	document.getElementById('now-cat').innerHTML = '';
-	document.getElementById('now-cat').append(homeImg);
-}, false);*/
-
 var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
-		count: '',
+		count: 0,
 		imgid: 1,
 		countid: 3
 	},
