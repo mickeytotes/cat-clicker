@@ -14,7 +14,7 @@
 var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
-		count: null,
+		count: countCopy,
 		imgid: 1,
 		countid: 3
 	},
