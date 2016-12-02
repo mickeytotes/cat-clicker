@@ -73,11 +73,11 @@ function loadCats(array) {
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
-
-
-
 			};
 		})(name, catImg, count));
+
+		document.getElementById('sample-count').innerHTML = '';
+		document.getElementById('sample-count').innerHTML = count.valueOf();
 
 		// load menu bar with cat names
 		document.getElementById('name-container').appendChild(name);
@@ -91,9 +91,6 @@ function loadCats(array) {
 				console.log(countCopy);
 			};
 		})(count));
-
-		document.getElementById('sample-count').innerHTML = '';
-		document.getElementById('sample-count').innerHTML = count;
 
 	}
 
