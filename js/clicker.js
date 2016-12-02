@@ -69,7 +69,7 @@ function loadCats(array) {
 				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
 				document.getElementById('now-cat').append(catImgCopy);
-				document.getElementById('sample-count').append(countCopy);
+				document.getElementById('sample-count').append(countCopy.valueOf());
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
@@ -79,6 +79,7 @@ function loadCats(array) {
 			};
 		})(name, catImg, count));
 
+		// load menu bar with cat names
 		document.getElementById('name-container').appendChild(name);
 
 		// increases the count when the cat picture is clicked
@@ -121,6 +122,7 @@ function loadCats(array) {
 		//document.body.appendChild(catEntry);
 	}
 
+	//returns to default image when top logo is clicked
 	var head = document.getElementById('hc');
 
 	head.addEventListener('click', function() {
