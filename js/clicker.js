@@ -82,8 +82,6 @@ function loadCats(array) {
 				countCopy = Number(countCopy) + 1;
 				num.append(countCopy);
 				console.log(countCopy);
-				console.log(event.target);
-  				console.log(this);
 			};
 		})(count));
 
