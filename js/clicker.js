@@ -50,7 +50,6 @@ function loadCats(array) {
 		catImg.style.width = '200px';
 		catImg.className = ("cat");
 
-		// increases the count when the cat picture is clicked
 		catImg.addEventListener("click", (function(countCopy) {
 			return function() {
 				var num = document.getElementById('sample-count');
@@ -60,8 +59,6 @@ function loadCats(array) {
 				console.log(countCopy);
 			};
 		})(count));
-
-	}
 
 
 		// loads the cat corresponding to the name clicked
@@ -96,9 +93,9 @@ function loadCats(array) {
 				num.append(countCopy);
 				console.log(countCopy);
 			};
-		})(count));
+		})(count));*/
 
-	}*/
+	}
 
 	//returns to default image when top logo is clicked
 	var head = document.getElementById('hc');
