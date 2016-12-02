@@ -62,10 +62,11 @@ function loadCats(array) {
 		// loads the cat corresponding to the name clicked
 		name.addEventListener("click", (function(nameCopy, catImgCopy, countCopy) {
 			return function() {
+				var nameValue = nameCopy.innerHTML;
 				var counter = document.getElementById('sample-count');
 				counter.innerHTML = countCopy;
 				document.getElementById('sample-p').innerHTML = '';
-				//document.getElementById('sample-count').innerHTML = '';
+				document.getElementById('sample-count').innerHTML = '';
 				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
 				document.getElementById('now-cat').append(catImgCopy);
