@@ -88,7 +88,6 @@ function loadCats(array) {
 				document.getElementById('sample-count').innerHTML = '';
 				countCopy = Number(countCopy) + 1;
 				document.getElementById('sample-count').append(countCopy);
-				array[i].count.push(countCopy);
 				console.log(countCopy);
 			};
 		})(count));
