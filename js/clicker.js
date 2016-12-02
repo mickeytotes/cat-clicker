@@ -14,7 +14,7 @@
 var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
-		count: 0,
+		count: null,
 		imgid: 1,
 		countid: 3
 	},
@@ -69,7 +69,7 @@ function loadCats(array) {
 				document.getElementById('now-cat').innerHTML = '';
 				document.getElementById('sample-p').append(nameValue);
 				document.getElementById('now-cat').append(catImgCopy);
-				document.getElementById('sample-count').append(countCopy.valueOf());
+				document.getElementById('sample-count').append(countCopy);
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
