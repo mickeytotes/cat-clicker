@@ -64,14 +64,15 @@ function loadCats(array) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
 				var counter = document.getElementById('sample-count');
+				var p = document.getElementById('sample-p');
+				var cat = document.getElementById("now-cat");
 				//counter.innerHTML = countCopy;
-				document.getElementById('sample-p').innerHTML = '';
-				document.getElementById('sample-count').innerHTML = '';
-				document.getElementById('now-cat').innerHTML = '';
-				document.getElementById('sample-p').append(nameValue);
-				document.getElementById('now-cat').append(catImgCopy);
-				document.getElementById('sample-count').append(countCopy);
-				countCopy.push;
+				p.innerHTML = '';
+				counter.innerHTML = '';
+				cat.innerHTML = '';
+				p.append(nameValue);
+				cat.append(catImgCopy);
+				counter.append(countCopy);
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
