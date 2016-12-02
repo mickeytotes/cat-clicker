@@ -64,7 +64,7 @@ function loadCats(array) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
 				var counter = document.getElementById('sample-count');
-				counter.innerHTML = countCopy;
+				counter.innerHTML = array[i].count;
 				document.getElementById('sample-p').innerHTML = '';
 				document.getElementById('sample-count').innerHTML = '';
 				document.getElementById('now-cat').innerHTML = '';
