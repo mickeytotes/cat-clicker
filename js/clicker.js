@@ -92,34 +92,9 @@ function loadCats(array) {
 			};
 		})(count));
 
+		document.getElementById('sample-count').innerHTML = '';
+		document.getElementById('sample-count').innerHTML = count;
 
-		/*var catEntry = document.createElement('div');
-
-		var catName = document.createElement('h2');
-		catName.innerHTML = array[i].name;
-		catEntry.appendChild(catName);
-
-		var catImg = document.createElement('img');
-		catImg.src = array[i].img;
-		catImg.style.width = '200px';
-		catImg.className = ("cat");
-		catEntry.appendChild(catImg);
-
-		var catCount = document.createElement('p');
-		catCount.innerHTML = array[i].count;
-		var num = catCount.innerHTML;
-		catEntry.appendChild(catCount);
-		catImg.id = array[i].imgid;
-		catCount.id = array[i].countid;
-
-		catImg.addEventListener("click", (function(numCopy) {
-			return function(){
-				numCopy = Number(numCopy) + 1;
-				console.log(numCopy);
-			};
-		})(num));*/
-
-		//document.body.appendChild(catEntry);
 	}
 
 	//returns to default image when top logo is clicked
