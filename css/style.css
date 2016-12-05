@@ -24,8 +24,6 @@ body {
 	font-family: Arial black, sans-serif;
 	color: #3e3631;
 }
-
-h2,
 p {
 	text-align: center;
 	font-family: Arial black, sans-serif;
@@ -53,19 +51,6 @@ p {
 	padding-top: 100px;
 }
 
-
-
-/*.cat-container {
-	max-width: 100%;
-	height: auto;
-}
-
-/*#name {
-	text-align: center;
-	font-family: Arial black, sans-serif;
-	color: #3e3631;
-}*/
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -74,14 +59,3 @@ img {
 	margin-right: auto;
 	box-shadow: 1px 2px 2px 2px gray;
 }
-
-/*#counter-container {
-	height: 75px;
-	max-width: 100%;
-}
-
-#counter {
-	text-align: center;
-	font-family: Impact, sans-serif;
-	color: #3e3631;
-}*/

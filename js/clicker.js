@@ -7,36 +7,26 @@ var cats = [{
 		name: "Toby",
 		img: "images/happy-kitten.jpg",
 		count: 0
-		//imgid: 1,
-		//countid: 3
 	},
 	{
 		name: "Cecile",
 		img: "images/screaming.jpeg",
 		count: 0
-		//imgid: 2,
-		//countid: 4
 	},
 	{
 		name: "Johnson",
 		img: "images/bald-cat.jpg",
 		count: 0
-		//imgid: 5,
-		//countid: 6
 	},
 	{
 		name: "Olivia",
 		img: "images/waiting-cat.jpg",
 		count: 0
-		//imgid: 7,
-		//countid: 8
 	},
 	{
 		name: "Stormio",
 		img: "images/duh-cat.jpg",
 		count: 0
-		//imgid: 9,
-		//countid: 10
 	}]
 
 function loadCats(array) {
