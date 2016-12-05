@@ -52,7 +52,7 @@ function loadCats(array) {
 
 
 		// loads the cat corresponding to the name clicked
-		name.addEventListener("click", (function(nameCopy, catImgCopy, countCopy) {
+		name.addEventListener("click", (function(nameCopy, catImgCopy, index) {
 			return function() {
 				var nameValue = nameCopy.innerHTML;
 				var counter = document.getElementById('sample-count');
@@ -64,12 +64,12 @@ function loadCats(array) {
 				cat.innerHTML = '';
 				p.append(nameValue);
 				cat.append(catImgCopy);
-				counter.append(countCopy);
+				counter.append(array[index].count);
 				console.log(nameCopy);
 				console.log(catImgCopy);
 				console.log(countCopy);
 			};
-		})(name, catImg, count));
+		})(name, catImg, i));
 
 		// load menu bar with cat names
 		document.getElementById('name-container').appendChild(name);
