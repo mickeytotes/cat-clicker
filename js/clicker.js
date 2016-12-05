@@ -67,7 +67,7 @@ function loadCats(array) {
 				counter.append(array[index].count);
 				console.log(nameCopy);
 				console.log(catImgCopy);
-				console.log(countCopy);
+				console.log(array[index].count);
 			};
 		})(name, catImg, i));
 
