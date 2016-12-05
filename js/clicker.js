@@ -96,6 +96,7 @@ function loadCats(array) {
 
 		document.getElementById('now-cat').innerHTML = '';
 		document.getElementById('sample-count').innerHTML = '';
+		document.getElementById('sample-p').innerHTML = '';
 		document.getElementById('now-cat').appendChild(homeImg);
 	}, false);
 
