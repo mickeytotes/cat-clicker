@@ -72,6 +72,11 @@ var catView = {
 			octopus.incrementCounter();
 		});
 
+		this.homeElem = document.getElementById('hc');
+		this.homeElem.addEventListener('click', function() {
+			this.catImageElem.src = "images/kitty-litter.jpg";
+		});
+
 		//this.render();
 	},
 
