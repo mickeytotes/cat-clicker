@@ -20,8 +20,14 @@ body {
 }
 
 @media screen and (max-width: 586px) {
-	.header{
+	.header {
 		letter-spacing: 10px;
+	}
+}
+
+@media screen and (max-width: 396px) {
+	.header {
+		letter-spacing: 5px;
 	}
 }
 
