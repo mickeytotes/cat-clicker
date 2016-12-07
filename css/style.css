@@ -20,7 +20,9 @@ body {
 }
 
 @media screen & (max-width: 586px) {
-	letter-spacing: 10px;
+	.header{
+		letter-spacing: 10px;
+	}
 }
 
 #greeting {
