@@ -179,9 +179,9 @@ var adminView = {
 			adminForm.style.display = 'block';
 
 			var currentCat = octopus.getCurrentCat();
-			this.nameElem.value = currentCat.name;
-			this.imgElem.value = currentCat.imgSrc;
-			this.countElem.value = currentCat.clickCount;
+			document.getElementById('admin-name').value = currentCat.name;
+			document.getElementById('admin-img').value = currentCat.imgSrc;
+			document.getElementById('admin-count').value = currentCat.clickCount;
 		})
 	}
 
