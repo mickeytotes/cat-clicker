@@ -42,6 +42,7 @@ var octopus = {
 		// initialize views
 		catView.init();
 		catListView.init();
+		adminView.init();
 	},
 
 	getCurrentCat: function() {
