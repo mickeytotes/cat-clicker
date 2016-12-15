@@ -156,8 +156,10 @@ var catListView = {
 };
 
 var adminView = {
+	var adminForm = document.getElementById('admin-form');
+
 	init: function () {
-		var adminForm = document.getElementById('admin-form');
+		//var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
 
 		this.render();
