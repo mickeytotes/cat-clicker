@@ -156,10 +156,8 @@ var catListView = {
 };
 
 var adminView = {
-	var adminForm = document.getElementById('admin-form');
-
 	init: function () {
-		//var adminForm = document.getElementById('admin-form');
+		var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
 
 		this.render();
@@ -169,6 +167,7 @@ var adminView = {
 	render: function () {
 		var adminBtn = document.getElementById('admin-button');
 		adminBtn.addEventListener('click', function() {
+			var adminForm = document.getElementById('admin-form');
 			adminForm.style.display = 'block';
 		})
 	}
