@@ -160,6 +160,8 @@ var adminView = {
 		var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
 
+		this.render();
+
 	},
 
 	render: function () {
