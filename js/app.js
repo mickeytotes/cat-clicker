@@ -75,7 +75,9 @@ var catView = {
 		this.homeElem = document.getElementById('hc');
 		this.homeElem.addEventListener('click', function() {
 			var homeImg = document.getElementById('cat-img');
+			var counter = document.getElementById('cat-count');
 			homeImg.src = "images/kitty-litter.jpg";
+			counter.innerHTML = '';
 		});
 
 		//this.render();
