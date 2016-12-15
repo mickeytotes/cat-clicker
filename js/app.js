@@ -157,8 +157,14 @@ var catListView = {
 
 var adminView = {
 	init: function () {
+		// hide fom by default
 		var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
+
+		// store pointers to DOM elements
+		this.nameElem = document.getElementById('admin-name');
+		this.imgElem = document.getElementById('admin-img');
+		this.countElem = document.getElementById('admin-count');
 
 		this.render();
 
@@ -166,9 +172,16 @@ var adminView = {
 
 	render: function () {
 		var adminBtn = document.getElementById('admin-button');
+
+		// display form on click of Admin button
 		adminBtn.addEventListener('click', function() {
 			var adminForm = document.getElementById('admin-form');
 			adminForm.style.display = 'block';
+
+			var currentCat = octopus.getCurrentCat();
+			this.nameElem.value = currentCat.name;
+			this.imgElem.value = currentCat.imgSrc;
+			this.countElem.value = currentCat.clickCount;
 		})
 	}
 
