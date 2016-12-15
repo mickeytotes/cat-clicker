@@ -160,21 +160,24 @@ var adminView = {
 		var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
 
-		var adminBtn = document.getElementById('admin-button');
-		adminBtn.addEventListener('click', function() {
-			adminForm.style.display = 'block';
-		})
-
-	}/*,
+	},
 
 	render: function () {
 		var adminBtn = document.getElementById('admin-button');
 		adminBtn.addEventListener('click', function() {
-			octopus.openAdmin();
+			adminForm.style.display = 'block';
 		})
-	}*/
+	}
 
 };
 
 // Run
 octopus.init();
+
+
+/*render: function () {
+		var adminBtn = document.getElementById('admin-button');
+		adminBtn.addEventListener('click', function() {
+			octopus.openAdmin();
+		})
+	}*/
