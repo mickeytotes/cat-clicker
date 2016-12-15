@@ -62,11 +62,11 @@ var octopus = {
 	incrementCounter: function() {
 		model.currentCat.clickCount++;
 		catView.render();
-	}
+	},
 
 	openAdmin: function() {
 		adminView.render();
-	}
+	},
 
 	closeAdmin: function() {
 		adminView.init();
@@ -160,7 +160,7 @@ var adminView = {
 		var adminForm = document.getElementById('admin-form');
 		admin-form.style.display = 'none';
 
-	}
+	},
 
 	render: function () {
 		var adminBtn = document.getElementById('admin-button');
