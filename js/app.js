@@ -194,7 +194,7 @@ var adminView = {
 		var saveBtn = document.getElementById('admin-save');
 
 		saveBtn.addEventListener('click', function() {
-			pushData();
+			octopus.pushData();
 			console.log("data saved");
 		})
 	}
