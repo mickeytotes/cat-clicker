@@ -103,9 +103,9 @@ var catView = {
 			homeImg.src = "images/kitty-litter.jpg";
 			counter.innerHTML = '';
 		});
-		//if this.render() was called, the first cat in the array would load
+		//if this.render() is called, the first cat in the array would load
 		//instead of the home image
-		//this.render();
+		this.render();
 	},
 
 	render: function() {
