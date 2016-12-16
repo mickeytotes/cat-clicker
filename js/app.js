@@ -195,6 +195,7 @@ var adminView = {
 
 		saveBtn.addEventListener('click', function() {
 			pushData();
+			console.log("data saved");
 		})
 	}
 
