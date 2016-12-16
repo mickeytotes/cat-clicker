@@ -70,6 +70,12 @@ var octopus = {
 
 	closeAdmin: function() {
 		adminView.init();
+	},
+
+	pushData: function() {
+		model.currentCat.name = document.getElementById('admin-name').value;
+		model.currentCat.imgSrc = document.getElementById('admin-img').value;
+		model. currentCat.clickCount = document.getElementById('admin-count').value;
 	}
 
 };
@@ -182,6 +188,13 @@ var adminView = {
 			document.getElementById('admin-name').value = currentCat.name;
 			document.getElementById('admin-img').value = currentCat.imgSrc;
 			document.getElementById('admin-count').value = currentCat.clickCount;
+		})
+
+
+		var saveBtn = document.getElementById('admin-save');
+
+		saveBtn.addEventListener('click', function() {
+			pushData();
 		})
 	}
 
