@@ -200,6 +200,12 @@ var adminView = {
 			catListView.render();
 			console.log("data saved");
 		})
+
+		var cancelBtn = document.getElementById('admin-cancel');
+
+		cancelBtn.addEventListener('click', function() {
+			this.init();
+		})
 	}
 
 };
