@@ -73,9 +73,9 @@ var octopus = {
 	},
 
 	pushData: function() {
-		model.currentCat.name = document.getElementById('admin-name').value;
-		model.currentCat.imgSrc = document.getElementById('admin-img').value;
-		model. currentCat.clickCount = document.getElementById('admin-count').value;
+		model.currentCat.name.push = document.getElementById('admin-name').value;
+		model.currentCat.imgSrc.push = document.getElementById('admin-img').value;
+		model. currentCat.clickCount.push = document.getElementById('admin-count').value;
 	}
 
 };
@@ -163,7 +163,7 @@ var catListView = {
 
 var adminView = {
 	init: function () {
-		// hide fom by default
+		// hide form by default
 		var adminForm = document.getElementById('admin-form');
 		adminForm.style.display = 'none';
 
