@@ -73,9 +73,13 @@ var octopus = {
 	},
 
 	pushData: function() {
-		model.currentCat.name.push(document.getElementById('admin-name').value);
-		model.currentCat.imgSrc.push(document.getElementById('admin-img').value);
-		model.currentCat.clickCount.push(document.getElementById('admin-count').value);
+		var newName = document.getElementById('admin-name').value;
+		var newImg = document.getElementById('admin-img').value;
+		var newCount = document.getElementById('admin-count').value;
+
+		model.currentCat.push({name: newName});
+		model.currentCat.push({imgSrc: newImg});
+		model.currentCat.push({clickCount: newCount});
 		console.log("pushData called");
 	}
 
