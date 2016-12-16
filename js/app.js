@@ -204,7 +204,8 @@ var adminView = {
 		var cancelBtn = document.getElementById('admin-cancel');
 
 		cancelBtn.addEventListener('click', function() {
-			octopus.closeAdmin;
+			var aForm = document.getElementById('admin-form');
+			aForm.style.display = 'none';
 		})
 	}
 
