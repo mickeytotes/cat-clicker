@@ -72,7 +72,7 @@ var octopus = {
 		adminView.init();
 	},
 
-	pushData: function() {
+	/*pushData: function() {
 		var newName = document.getElementById('admin-name').value;
 		var newImg = document.getElementById('admin-img').value;
 		var newCount = document.getElementById('admin-count').value;
@@ -80,8 +80,8 @@ var octopus = {
 		model.currentCat.push({name: newName});
 		model.currentCat.push({imgSrc: newImg});
 		model.currentCat.push({clickCount: newCount});
-		console.log("pushData called");
-	}
+		//console.log("pushData called");
+	}*/
 
 };
 
@@ -199,7 +199,17 @@ var adminView = {
 		var saveBtn = document.getElementById('admin-save');
 
 		saveBtn.addEventListener('click', function() {
-			octopus.pushData();
+			//octopus.pushData();
+
+			var newName = document.getElementById('admin-name').value;
+			var newImg = document.getElementById('admin-img').value;
+			var newCount = document.getElementById('admin-count').value;
+
+			model.currentCat.push({name: newName});
+			model.currentCat.push({imgSrc: newImg});
+			model.currentCat.push({clickCount: newCount});
+
+
 			catView.render();
 			catListView.render();
 			console.log("data saved");
