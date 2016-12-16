@@ -196,6 +196,8 @@ var adminView = {
 
 		saveBtn.addEventListener('click', function() {
 			octopus.pushData();
+			catView.render();
+			catListView.render();
 			console.log("data saved");
 		})
 	}
